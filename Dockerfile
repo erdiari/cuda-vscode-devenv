@@ -25,7 +25,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 # Install PyTorch with CUDA support in the virtual environment
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+    pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 
 # Install uv (Python package installer)
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
